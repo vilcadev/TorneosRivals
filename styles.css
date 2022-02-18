@@ -452,6 +452,10 @@ al posicionar el cursor*/
     font-size: 150px;
     text-align: center;
   }
+  
+  .container{
+    height: 100px;
+  }
 
 
 
@@ -662,6 +666,10 @@ al posicionar el cursor*/
 }
 /*500*/
 @media (max-device-width: 500px) {
+
+.container{
+    height: 250px;
+  }
 
   /*El titulo del showcase para moviles*/
   .ShowCase h2{
