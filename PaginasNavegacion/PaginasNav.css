@@ -1,0 +1,656 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+/*Esto es para el fondo el heropatterns me refiero*/
+body{
+  background:#111217;
+
+ font-family: 'Oswald', sans-serif;
+
+}
+
+a{
+  color: #10baa8;
+  text-decoration: none;
+}
+/*Suavizado del Scroll- Mas concretamente añadi esto para el deslize de contactos*/
+html{
+  scroll-behavior: smooth;
+}
+
+
+/*Editamos el tamaño del .container*/
+.container{
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  background:#1b1c23;
+  opacity: 0.9;
+  padding-left: 370px;
+  height: 13%;
+  padding-top: 33px;
+}
+
+/*Ajustamos el tamaño del logo en el principal*/
+.container .nav-main img{
+  width: 75px;
+  height: 75px;
+}
+/*aca ven editaaaaaaaa*/
+.container hr{
+  width: 1100px;
+}
+.Container-ProxEventos{
+  width: 90%;
+  margin: auto;
+  padding-top: 130px;
+}
+
+
+/* NAVIGATION */
+.nav-main{
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+/* Clase nav-main, edit alls <li> in the class */
+.nav-main li{
+  font-size: 30px;
+}
+.nav-brand{
+  width: 50px;
+}
+/*NAV LEFT */
+.nav-main ul{
+  display: flex;
+}
+
+.nav-main ul li{
+  padding: 30px;
+  list-style: none;
+}
+.nav-main ul li a{
+  padding: 2px;
+
+}
+
+.nav-main ul li a:hover{
+  border-bottom: 2px solid #10baa8;
+
+}
+
+.nav-main ul.nav-menu{
+  flex: 1;
+  margin-left: 30px;
+
+
+}
+/*Contenedor Debajo de la barra de Navegacion*/
+.Container-ProxEventos .ShowCase{
+  color: #10baa8;
+  background:#1b1c23;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 35px;
+  border-radius: 6px;
+}
+
+.Container-ProxEventos .footer-LlaveCompeticion h2{
+  margin-top: 30px;
+  color: #10baa8;
+  background:#1b1c23;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  font-size: 50px;
+  border-radius: 6px;
+}
+
+
+.Container-ProxEventos img{
+  width: 250px;
+  height: 250px;
+  opacity: 0.9;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.Container-ProxEventos .footer-ProxEventos{
+
+  background:#1b1c23;
+  color:#10baa8;
+  font-size: 12px;
+  opacity: 0.8;
+  border-radius: 6px;
+
+}
+.Container-ProxEventos .footer-ProxEventos{
+  width: 55%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.footer-ProxEventos{
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 100px;
+}
+.footer-ProxEventos ul{
+  margin: 0 auto;
+}
+
+
+.footer-ProxEventos ul li{
+  font-size: 25px;
+  list-style: none;
+  line-height: 2.8;
+
+}
+/*Editando las imagenes de la llave de competicion vigente*/
+.Container-ProxEventos .footer-LlaveCompeticion img{
+  padding-top: 50px;
+  width: 30%;
+  height: 400%;
+  display: block;
+  margin: auto;
+  opacity: 5;
+}
+/*Editando el primer cuadro de La pestaña Proximos Eventos*/
+.footer-Title{
+  background:#1b1c23;
+  color:#10baa8;
+  font-size: 35px;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 100px;
+  text-align: center;
+  margin-top: 50px;
+}
+/*Editando el Texto Del Primer Cuadro*/
+
+.footer-Title li{
+  list-style: none;
+}
+
+.menu-btn{
+  position: absolute;
+  cursor: pointer;
+  top:20px;
+  right: 36px;
+  z-index: 2;
+  font-size: 1.0rem;
+  display: none;
+  color: #ffffff;
+}
+
+/*Social*/
+.social p{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.links a{
+  margin: 0 30px;
+}
+.links a i{
+  font-size: 3rem;
+  padding-bottom: 40px;
+}
+.footer{
+  background: #1b1c23;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.boton-social{
+  background: #1b1c23;
+  width: 90px;
+  height: 90px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #10baa8;
+  overflow: hidden;
+  position: relative;
+
+}
+.boton-social i{
+  line-height: 95px;
+  font-size: 10px;
+  transition: 0.2s linear;
+
+}
+.boton-social:hover i{
+  transform: scale(1.3);
+  color: #1b1c23;
+}
+.boton-social::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #10baa8;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+.boton-social:hover::before{
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+@keyframes aaa {
+  0%{
+    left:-110%;
+    top:90%;
+  }
+  50%{
+    left: 10%;
+    top:-30%;
+  }
+  100%{
+    top:-10%;
+    left: -10%;
+  }
+
+}
+
+/*Proximos eventos escudo league of rival*/
+.ShowCase img{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 500px;
+}
+
+
+/*RESPONSIVE PARA VENTANA PROXIMOS EVENTOS*/
+
+@media (max-width:1550px){
+  .container{
+    padding-left: 0px;
+    padding-right: 100px;
+  }
+}
+@media (max-device-width:1255px){
+
+  .Container-ProxEventos img{
+    width: 250px;
+    height: 250px;
+    opacity: 0.9;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 75px;
+  }
+
+  .nav-main{
+    width: 200px;
+    height: 200px;
+  }
+  .container .nav-main img{
+
+    width: auto;
+    height: auto;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 45px;
+  }
+
+  .nav-main img{
+    margin-left: 35px;
+  }
+  .menu-btn {
+    display: block;
+    margin-right: 50px;
+    font-size: 75px;
+  }
+
+  .container{
+    padding-left: 10px;
+  }
+  .ShowCase h2{
+    font-size: 29px;
+  }
+  .nav-main .menu-btn{
+    transform: translateX(-10px);
+    display: block;
+  }
+
+  .nav-main ul.nav-menu{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    background:#1b1c23;
+    width: 55%;
+    height: 1500%;
+    transform: translateX(-800px); /*Con esto ocultamos la barra de navegacion*/
+    transition: transform .5s ease-in-out; /*Esto le da una transicion al codigo*/
+    padding: -100px;
+    opacity: .9;
+  }
+  .nav-main ul.nav-menu.show{
+    transform: translateX(-40px);  /*Con esto mostramos la barra de navegacion*/
+
+  }
+  .nav-main ul.nav-menu li{
+    padding: 20px;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .nav-main ul.nav-menu a{
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .nav-main ul.nav-menu-right{
+    margin-right: 40px;
+  }
+  .nav-main ul.nav-menu li a{
+    color: #10baa8;
+    font-weight: lighter;
+  }
+  .nav-main ul.nav-menu li a:hover{
+    border-bottom: 2px solid #10baa8;
+  }
+
+  .footer-links .footer-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+}
+@media (max-width:800px) {
+
+  .footer-LlaveCompeticion img{
+    padding-top: 50px;
+    max-width: 600%;
+    max-height: 300%;
+    display: block;
+    margin: auto;
+    opacity: 5;
+  }
+}
+
+@media (max-width:700px) {
+
+  .menu-btn{
+    display: block;
+    font-size:30px;
+  }
+  .container{
+    padding-left: 10px;
+  }
+  .ShowCase h2{
+    font-size: 29px;
+  }
+  .nav-main .menu-btn{
+    transform: translateX(-10px);
+    display: block;
+  }
+  .nav-main ul.nav-menu{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    background:#1b1c23;
+    width: 45%;
+    height: 1500%;
+    transform: translateX(-400px); /*Con esto ocultamos la barra de navegacion*/
+    transition: transform .5s ease-in-out; /*Esto le da una transicion al codigo*/
+    padding: -100px;
+    opacity: .9;
+  }
+  .nav-main ul.nav-menu.show{
+    transform: translateX(-50px);  /*Con esto mostramos la barra de navegacion*/
+
+  }
+  .nav-main ul.nav-menu li{
+    padding: 20px;
+    padding: 55px;
+    font-size: 27px;
+  }
+  .nav-main ul.nav-menu-right{
+    margin-right: 40px;
+  }
+  .nav-main ul.nav-menu li a{
+    color: #10baa8;
+    font-weight: lighter;
+
+
+  }
+  .nav-main ul.nav-menu li a:hover{
+    border-bottom: 2px solid #10baa8;
+  }
+  .news-cards {
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+  }
+  .news-cards div{
+    width: 100%;
+    height: 270px;
+
+  }
+  .cards-banner-one .content,
+  .cards-banner-two .content
+  {
+    width: 80%;
+  }
+  .footer-links .footer-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+@media (max-device-width: 500px) {
+  .container{
+    height: 17%;
+  }
+
+
+  /*Editamos el boton de los 3 puntos para moviles*/
+  .menu-btn {
+    color:#10baa8;
+    display: block;
+    margin-right: 50px;
+    font-size: 150px;
+    margin-top: 29px;
+  }
+  /*Editamos el logo Lol para moviles*/
+  .nav-main{
+    width: 250px;
+    height: 250px;
+    margin-top: 25px;
+  }
+  .container .nav-main img{
+    width: auto;
+    height: auto;
+    width: 200px;
+    height: 200px;
+  }
+  /*Editamos el escudo de proximos eventos*/
+
+   .Container-ProxEventos img{
+    width: 75%;
+    height: 75%;
+    opacity: 0.9;
+    display: block;
+    margin: auto;
+    margin-bottom: 70px;
+  }
+
+  /*Contenedor Debajo del escudo (la caja)*/
+  .Container-ProxEventos .ShowCase {
+    color: #10baa8;
+    background:#1b1c23;
+    height: 350px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.9;
+    font-size: 100px;
+    border-radius: 6px;
+  }
+
+  .Container-ProxEventos .footer-LlaveCompeticion h2{
+    margin-top: 30px;
+    color: #10baa8;
+    background:#1b1c23;
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.9;
+    font-size: 100px;
+    border-radius: 6px;
+  }
+
+  /*Contenedor Debajo del escudo (las letras)*/
+  .Container-ProxEventos .ShowCase h2 {
+
+    font-size: 84px;
+
+  }
+  /*Editamos las cajitas de los equipos*/
+
+  .Container-ProxEventos .footer-ProxEventos {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: 616161;
+    font-size: 12px;
+    opacity: 0.8;
+    border-radius: 6px;
+
+
+  }
+
+  .Container-ProxEventos .footer-ProxEventos a,
+   .Container-ProxEventos .footer-ProxEvento  h3{
+
+    font-size: 50px;
+
+
+  }
+  .Container-ProxEventos .footer-ProxEventos{
+    position: relative;
+    top: 550px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 200px;
+  }
+
+
+
+  /*Editamos las imagenes de grupos, semis, y final de La llave competicion*/
+  .Container-ProxEventos .footer-LlaveCompeticion img{
+    padding-top: 50px;
+    width: 75%;
+    height: 400%;
+    display: block;
+    margin: auto;
+    opacity: 5;
+
+  }
+ /*Añadimos un margen top al social*/
+  .social p{
+    margin-top: 700px;
+    text-align: center;
+    font-size: 65px;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+
+  /*Editamos el menu side bar para moviles*/
+
+  .nav-main ul.nav-menu{
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    background:#1b1c23;
+    width: 55%;
+    height: 1500%;
+    transform: translateX(-800px); /*Con esto ocultamos la barra de navegacion*/
+    transition: transform .5s ease-in-out; /*Esto le da una transicion al codigo*/
+    padding: -100px;
+    opacity: .9;
+  }
+  .nav-main ul.nav-menu.show{
+    transform: translateX(-30px);  /*Con esto mostramos la barra de navegacion*/
+
+  }
+  .nav-main ul.nav-menu li{
+    padding: 20px;
+    padding: 100px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .nav-main ul.nav-menu a{
+    font-size: 80px;
+    font-weight: bold;
+  }
+  .nav-main ul.nav-menu-right{
+    margin-right: 40px;
+  }
+  .nav-main ul.nav-menu li a{
+    color: #10baa8;
+    font-weight: lighter;
+  }
+  .nav-main ul.nav-menu li a:hover{
+    border-bottom: 2px solid #10baa8;
+  }
+
+  .Container-ProxEventos{
+    width: 90%;
+    margin: auto;
+    padding-top: 450px;
+  }
+
+  .news-cards{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .news-cards div{
+    width: 100%;
+    height: 500px;
+  }
+
+  .cards-banner-one .content,
+  .cards-banner-two .content
+  {
+    width:100%;
+    padding: 60px 20px;
+  }
+  .footer-links .footer-container{
+    grid-template-columns: 1fr;
+  }
+  .footer h3{
+    font-size: 35px;
+  }
+
+}
